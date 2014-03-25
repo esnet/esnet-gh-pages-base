@@ -9,8 +9,8 @@ provides the overrides and customizations to the base theme.
 .. _Sphinx: http://sphinx-doc.org
 .. _sphinx-boostrap-theme: https://github.com/ryan-roemer/sphinx-bootstrap-theme
 
-Getting Started
-~~~~~~~~~~~~~~~
+Installation
+------------
 
 1. Install Sphinx and sphinx-bootstrap-theme. See the instructions below for
    installing these either using the Mac OS X base system python or MacPorts.
@@ -23,7 +23,7 @@ Getting Started
 8. edit ``conf.py`` as described in the next section
   
 Editing conf.py
-~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^
 
 ``sphinx-quickstart`` creates a basic conf.py file, however to use the ESnet
 theme we need to make some changes. Make the following changes to conf.py::
@@ -65,13 +65,13 @@ theme we need to make some changes. Make the following changes to conf.py::
 That's it!
 
 Sphinx Installation using Mac OS X Base Python
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 1. sudo /usr/bin/easy_install pip
 2. sudo /usr/local/bin/pip install sphinx sphinx-bootstrap-theme
 
 Sphinx Installation using MacPorts
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 1. port install python27 py27-pip py27-sphinx
 2. port select pip py27-pip
@@ -79,7 +79,29 @@ Sphinx Installation using MacPorts
 4. pip install sphinx sphinx-bootstrap-theme # make sure this is
    /opt/local/bin/pip
 
-Publishing
-~~~~~~~~~~
+Creating Content, Previewing and Publishing
+-------------------------------------------
 
-From the ``docs`` directory run ``_esnet/deploy.sh``.
+The files are in the ``docs`` directory.  Take a look at the content of
+``index.rst``.  Take a look at the docs from other projects and review the
+documentation for Sphinx_.
+
+Building HTML
+^^^^^^^^^^^^^
+
+In the ``docs`` directory run ``make clean html``.
+
+Previewing the site
+^^^^^^^^^^^^^^^^^^^
+
+``open _build/html/index.html``
+
+or
+
+``open -a /Application/Google\ Chrome.app _build/html/index.html``
+
+Publishing the site
+^^^^^^^^^^^^^^^^^^^
+
+From the ``docs`` directory run ``_esnet/deploy.sh``.  It will be visible at:
+``http://github.com/esnet/PROJECT``.
