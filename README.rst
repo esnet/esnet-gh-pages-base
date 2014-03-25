@@ -7,7 +7,7 @@ pages.  This repo is meant to be included into a project using git subtree and
 provides the overrides and customizations to the base theme.
 
 .. _Sphinx: http://sphinx-doc.org
-.. _sphinx-bootsrap-theme: https://github.com/ryan-roemer/sphinx-bootstrap-theme
+.. _sphinx-bootstrap-theme: https://github.com/ryan-roemer/sphinx-bootstrap-theme
 
 Installation
 ------------
