@@ -2,7 +2,7 @@ esnet-gh-pages-base
 ===================
 
 Base templates for ESnet's GitHub pages. These pages are created using the
-Sphinx_ documentation package using the _`sphinx-boostrap-theme` with some
+Sphinx_ documentation package using the `sphinx-boostrap-theme`_ with some
 pages.  This repo is meant to be included into a project using git subtree and
 provides the overrides and customizations to the base theme.
 
