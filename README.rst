@@ -20,7 +20,9 @@ Getting Started
    https://github.com/esnet/esnet-gh-pages-base.git master --squash
 5. cd docs
 6. sphinx-quickstart
-7. edit conf.py::
+7. edit conf.py
+   
+Like this::
 
    # add this with the imports at the top of the file
    import sphinx_bootstrap_theme
@@ -49,6 +51,7 @@ Getting Started
    html_logo = "_esnet/static/logo-esnet-ball-sm.png"
    html_sidebars = {'index': None, 'search': None, '*': ['localtoc.html']}
 
+That's it!
 
 Sphinx Installation using Mac OS X Base Python
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
