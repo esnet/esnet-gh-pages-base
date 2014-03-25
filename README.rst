@@ -19,7 +19,8 @@ Getting Started
 4. ``git subtree add --prefix docs/_esnet https://github.com/esnet/esnet-gh-pages-base.git master --squash``
 5. ``cd docs``
 6. ``sphinx-quickstart``
-7. edit ``conf.py`` as described in the next section
+7. ``ln -s ../_esnet/static _static/esnet``
+8. edit ``conf.py`` as described in the next section
   
 Editing conf.py
 ~~~~~~~~~~~~~~~
@@ -73,3 +74,5 @@ Sphinx Installation using MacPorts
 
 Publishing
 ~~~~~~~~~~
+
+From the ``docs`` directory run ``_esnet/deploy.sh``.
