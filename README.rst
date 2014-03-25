@@ -14,13 +14,18 @@ Getting Started
 
 1. Install Sphinx and sphinx-bootstrap-theme. See the instructions below for
    installing these either using the Mac OS X base system python or MacPorts.
-2. cd $PROJECT_ROOT
-3. mkdir docs
-4. git subtree add --prefix docs/_esnet \
-   https://github.com/esnet/esnet-gh-pages-base.git master --squash
-5. cd docs
-6. sphinx-quickstart
-7. edit conf.py::
+2. ``cd $PROJECT_ROOT``
+3. ``mkdir docs``
+4. ``git subtree add --prefix docs/_esnet https://github.com/esnet/esnet-gh-pages-base.git master --squash``
+5. ``cd docs``
+6. ``sphinx-quickstart``
+7. edit ``conf.py`` as described in the next section
+  
+Editing conf.py
+~~~~~~~~~~~~~~~
+
+``sphinx-quickstart`` creates a basic conf.py file, however to use the ESnet
+theme we need to make some changes. Make the following changes to conf.py::
 
    # add this with the imports at the top of the file
    import sphinx_bootstrap_theme
