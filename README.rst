@@ -20,9 +20,7 @@ Getting Started
    https://github.com/esnet/esnet-gh-pages-base.git master --squash
 5. cd docs
 6. sphinx-quickstart
-7. edit conf.py
-   
-Like this::
+7. edit conf.py::
 
    # add this with the imports at the top of the file
    import sphinx_bootstrap_theme
@@ -31,8 +29,8 @@ Like this::
    templates_path = ['_esnet/templates']
 
    # change html_theme and html_theme_path:
-   +html_theme = 'bootstrap'
-   +html_theme_path = sphinx_bootstrap_theme.get_html_theme_path()
+   html_theme = 'bootstrap'
+   html_theme_path = sphinx_bootstrap_theme.get_html_theme_path()
 
    # add html_theme options:
    html_theme_options = {
