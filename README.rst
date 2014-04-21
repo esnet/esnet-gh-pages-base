@@ -85,6 +85,7 @@ the following files in ``docs``::
    *.rst
    Makefile
    conf.py
+   _static/esnet  # to track the symlink created above
 
 You'll need to ``git add`` these files to your repo.  You may also want to
 add the following rules to ``${PROJECT_ROOT}/.gitignore``::
@@ -104,8 +105,7 @@ Sphinx Installation using MacPorts
 1. sudo port install python27 py27-pip py27-sphinx
 2. sudo port select pip py27-pip
 3. sudo port select sphinx py27-sphinx
-4. pip install sphinx sphinx-bootstrap-theme # make sure this is
-   /opt/local/bin/pip
+4. pip install sphinx sphinx-bootstrap-theme # make sure this is /opt/local/bin/pip
 
 Creating Content, Previewing and Publishing
 -------------------------------------------
