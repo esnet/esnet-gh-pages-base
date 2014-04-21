@@ -25,8 +25,18 @@ Installation
 Editing conf.py
 ^^^^^^^^^^^^^^^
 
-``sphinx-quickstart`` creates a basic conf.py file, however to use the ESnet
-theme we need to make some changes. Make the following changes to conf.py::
+``sphinx-quickstart`` creates a basic conf.py file. In general the
+defaults are OK and things can be fixed later by editing conf.py. 
+For author I suggest putting either the names of the people most 
+involved in writing the docs, the names of the developrs or if all
+else fails, ESnet is fine. The project release and version should 
+map to the current version of the project your are documenting and it 
+is a good idea to try to keep that up to date going forward. It might 
+be worth automating this if you have a way to do so in the project
+workflow.
+
+However to use the ESnet theme we need to make some changes.
+Make the following changes to conf.py::
 
    # add this with the imports at the top of the file
    import sphinx_bootstrap_theme
@@ -64,6 +74,24 @@ theme we need to make some changes. Make the following changes to conf.py::
 
 That's it!
 
+Files to track in the project repo
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The ``sphinx-quickstart`` command will create a number of files and the 
+sphinx build process will make files as well. I suggest not saving 
+sphinx build products in the project repo.  This works out to tracking 
+the following files in ``docs``::
+
+   *.rst
+   Makefile
+   conf.py
+
+You'll need to ``git add`` these files to your repo.  You may also want to
+add the following rules to ``${PROJECT_ROOT}/.gitignore``::
+
+   # ignore Sphinx build products
+   /docs/_build
+
 Sphinx Installation using Mac OS X Base Python
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -73,9 +101,9 @@ Sphinx Installation using Mac OS X Base Python
 Sphinx Installation using MacPorts
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1. port install python27 py27-pip py27-sphinx
-2. port select pip py27-pip
-3. port select sphinx py27-sphinx
+1. sudo port install python27 py27-pip py27-sphinx
+2. sudo port select pip py27-pip
+3. sudo port select sphinx py27-sphinx
 4. pip install sphinx sphinx-bootstrap-theme # make sure this is
    /opt/local/bin/pip
 
@@ -85,6 +113,14 @@ Creating Content, Previewing and Publishing
 The files are in the ``docs`` directory.  Take a look at the content of
 ``index.rst``.  Take a look at the docs from other projects and review the
 documentation for Sphinx_.
+
+Create the ``gh-pages`` branch
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Follow the instructions at `GitHub gh-pages creation`_ to create the initial
+gh-pages branch.
+
+_`GitHub gh-pages creation`: https://help.github.com/articles/creating-project-pages-manually
 
 Building HTML
 ^^^^^^^^^^^^^
