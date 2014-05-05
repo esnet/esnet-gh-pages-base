@@ -28,7 +28,7 @@ Editing conf.py
 ``sphinx-quickstart`` creates a basic conf.py file. In general the
 defaults are OK and things can be fixed later by editing conf.py. 
 For author I suggest putting either the names of the people most 
-involved in writing the docs, the names of the developrs or if all
+involved in writing the docs, the names of the developers or if all
 else fails, ESnet is fine. The project release and version should 
 map to the current version of the project your are documenting and it 
 is a good idea to try to keep that up to date going forward. It might 
@@ -134,10 +134,10 @@ Previewing the site
 
 or
 
-``open -a /Application/Google\ Chrome.app _build/html/index.html``
+``open -a /Applications/Google\ Chrome.app _build/html/index.html``
 
 Publishing the site
 ^^^^^^^^^^^^^^^^^^^
 
 From the ``docs`` directory run ``_esnet/deploy.sh``.  It will be visible at:
-``http://github.com/esnet/PROJECT``.
+``http://software.es.net/PROJECT``.
